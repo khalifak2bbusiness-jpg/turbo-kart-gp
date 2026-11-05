@@ -1,0 +1,11 @@
+# Render Blueprint. Dashboard: New + → Blueprint, then connect this repo.
+# Free web services sleep after about 15 minutes without traffic. Accounts
+# live in process memory, so a restart or a cold start clears them.
+services:
+  - type: web
+    name: turbo-kart-gp
+    runtime: node
+    plan: free
+    buildCommand: npm install
+    startCommand: npm start
+    healthCheckPath: /health
