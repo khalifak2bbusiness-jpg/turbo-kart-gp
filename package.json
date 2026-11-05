@@ -1,0 +1,17 @@
+{
+  "name": "turbo-kart-gp",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Turbo Kart GP browser client and multiplayer game server",
+  "engines": {
+    "node": "22.x"
+  },
+  "scripts": {
+    "start": "node server/server.js",
+    "smoke": "node scripts/smoke.js"
+  },
+  "dependencies": {
+    "express": "^4.21.2",
+    "ws": "^8.18.3"
+  }
+}
